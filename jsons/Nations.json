@@ -1,38 +1,51 @@
 [
-	{
-		"name": "Aliens",
-		"leaderName": "Zyxxyz",
-		"adjective": ["alien"],
-		"startBias": ["Snow"],
-		"preferredVictoryType": "Scientific",
-		
-		"startIntroPart1": "We come in peace!",
-		"startIntroPart2": "This is an overpowered joke nation just as an example for the mods feature. Set Phasers to Obliterate!!",
-		
-		"declaringWar": "Resistance is futile! Prepare to be assimilated!",
-		"attacked": "You want to play? Very funny!",
-		"defeated": "How is it possible that those Apes hurt us? The galactic senate will take care of them.",
-		"introduction": "As superior galactic entities, you are not worthy of our attention.",
-		
-		"neutralHello": "How are you doing?",
-		"neutralLetsHearIt": ["Go on.","What do you say?","You may begin."],
-		"neutralNo": ["We absolutely refuse.","No!","I refuse."],
-		"neutralYes": ["Very good.","Of course, yes.","That is very good."],
-
-		"hateHello": "What do you want now?",
-		"hateLetsHearIt": ["Speak!","What do you say?","Go on."],
-		"hateNo": ["That is not possible!","We are not agreeing to that!","I beg your pardon?"],
-		"hateYes": ["That is fine.","That is good enough.","Very well..."],
-		
-		"afterPeace": "Very well, all that fighting was getting boring anyway.",
-		"tradeRequest": "We bestow you the honor of this trade offer.",
-
-		"outerColor": [16,16,16],
-		"innerColor": [255,200,200],
-		"unique": "MANIFEST_DESTINY",
-		"cities": ["The Hive","Q'Throczan","Q'Chovex","Q'Imphet","Q'Omphead","Q'Grecoks","Q'Vrelzieks","Q'Vronens","Q'Aerlae",
-			"Q'Phulnoith","Q'Creved","Q'Xirqen","Q'Gax","Q'Threqals","Q'Bhilmuk","Q'Mazea","Q'Zomirs","Q'Drorkrex","Q'Honkrath",
-			"Q'Zulgra","Q'Vahars","Q'Crindith","Q'Raavraes","Q'Bhoknais","Qho'Qru","Q'Dateatz","Q'Elnad","Q'Izien","Qol'Ell",
-			"Q'Dhihien","Q'Naquiel","Q'Ugneon","Q'Straquks","Q'Nulptr","Q'Ohfahl"]
-	}
+        {
+            "name": "The Resistance",
+            "leaderName": "The Shadow Hand",
+            "adjective": ["Rebel"],
+            "personality": "Saboteur",
+            "uniques": [
+                "Unable to found cities",
+                "When conquering an encampment, earn [150 Gold] and recruit a [Warrior] unit [with promotion Nomadic Veteran]",
+                "When conquering an encampment, earn [200 Gold] and recruit a [Archer] unit [with promotion Nomadic Veteran] [with promotion Saboteur]",
+                "When conquering an encampment, earn [300 Gold] and recruit a [Horseman] unit [with promotion Nomadic Veteran] [with promotion Saboteur]",
+                "When conquering an encampment, earn [400 Gold] and recruit a [Swordsman] unit [with promotion Nomadic Veteran]",
+                "[+3 Science] per [Technology] discovered",
+                "[+3 Culture] per [Policy] adopted",
+                "[+1 Gold] per [Technology] discovered",
+                "[+1 Production] per [Policy] adopted",
+                "[+2 Unit Supply] per [Military] unit",
+                "[+1 Gold] per [Military] unit",
+                "[+1 Production] per [Worker] unit",
+                "[-25]% Gold cost of upgrading",
+                "[+25]% Strength gained from upgrading",
+                "Every 20 turns, gain a free [Crossbowman] unit",
+                "Every 30 turns, gain a free [Knight] unit",
+                "Receive triple Gold from Barbarian encampments and pillaging Cities",
+                "All healing effects doubled",
+                "[+1 Movement]",
+                "[+10]% Strength",
+                "Ignore Zone of Control",
+                "[+2 Movement] in enemy territory",
+                "May heal outside of friendly territory",
+                "May build improvements outside of friendly territory",
+                "May build [Hidden Cache]",
+                "[+100]% spy effectiveness [in enemy territory]",
+                "[+200]% spy level gained from successful spy actions",
+                "[-50]% enemy spy effectiveness [in friendly territory]",
+                "[+50] Gold from pillaging improvements",
+                "[+2 Culture] from pillaging improvements"
+            ],
+            "cities": [
+                "Hidden Base",
+                "Safe House",
+                "Underground Cell",
+                "Rebel Outpost"
+            ],
+            "spyNames": [
+                "Agent",
+                "Infiltrator",
+                "Saboteur",
+                "Shadow"
+		    }
 ]
