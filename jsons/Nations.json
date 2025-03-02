@@ -27,6 +27,8 @@
 
 		"outerColor": [10, 56, 19],
 		"innerColor": [209, 170, 43],
-		"cities": ["‎ "]
+		"cities": ["‎ "],
+		"uniques": [ "Militaristic City-States grant units [1.5] times as fast when you are at war with a common nation","[-20]% Strength for cities","[+1 Gold, +1 Culture, +1 Science]","[+1 Culture] per every [2] [Culture]","[+1 Science] per every [2] [Science]","[+1 Gold] per every [2] [Gold]","[+1 Science] per every [2] [Science]","[-25]% Gold cost of upgrading","[-25]% Gold cost of upgrading","[+50] Gold from pillaging improvements"],
+		"spyNames": ["Fidel","Lenin","Che","Zedong","Zapata"]
 	}
 ]
