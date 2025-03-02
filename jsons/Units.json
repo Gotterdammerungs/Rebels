@@ -7,6 +7,7 @@
 		"movement": 2,
 		"strength": 40,
 		"cost": 500,
-		"promotions": ["Logistics","Accuracy"],
+		"uniques": ["[+1 Science] per every [2] [Science]","[+1 Gold] per every [2] [Gold]","[+1 Science] per every [2] [Science]","[-25]% Gold cost of upgrading","[-25]% Gold cost of upgrading","[+50] Gold from pillaging improvements",
+			}
 	}
 ]
