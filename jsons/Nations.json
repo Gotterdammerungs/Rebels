@@ -2,15 +2,16 @@
 	{
 		"name": "The Resistance",
 		"leaderName": "Garibaldi",
-		"adjective": ["rebellious"],
+		"adjective": ["Rebellious"],
+		"preferredVictoryType": "Domination",
 		
-		"startIntroPart1": "You can't build cities, good luck",
-		"startIntroPart2": "The Resistance never falters. We will establish a new world order!",
+		"startIntroPart1": "pes",
+		"startIntroPart2": "pomt",
 		
-		"declaringWar": "You will be overthrown in the name of glory!",
-		"attacked": "Bad Idea",
-		"defeated": "We never lose. We will come back from the ashes, whether it takes 100 or 1000 years",
-		"introduction": "We'll be good friends if you accept our conditions.",
+		"declaringWar": "Resistance is futile! Prepare to be assimilated!",
+		"attacked": "You want to play? Very funny!",
+		"defeated": "flibitigibit",
+		"introduction": "As superior galactic entities, you are not worthy of our attention.",
 		
 		"neutralHello": "How are you doing?",
 		"neutralLetsHearIt": ["Go on.","What do you say?","You may begin."],
@@ -23,12 +24,11 @@
 		"hateYes": ["That is fine.","That is good enough.","Very well..."],
 		
 		"afterPeace": "Very well, all that fighting was getting boring anyway.",
-		"tradeRequest": "Wanna Trade?",
+		"tradeRequest": "We bestow you the honor of this trade offer.",
 
-		"outerColor": [10, 56, 19],
-		"innerColor": [209, 170, 43],
-		"cities": ["‎ "],
-		"uniques": [ "Militaristic City-States grant units [1.5] times as fast when you are at war with a common nation","[-20]% Strength for cities","[+1 Gold, +1 Culture, +1 Science]","[+1 Culture] per every [2] [Culture]","[+1 Science] per every [2] [Science]","[+1 Gold] per every [2] [Gold]","[+1 Science] per every [2] [Science]","[-25]% Gold cost of upgrading","[-25]% Gold cost of upgrading","[+50] Gold from pillaging improvements"],
-		"spyNames": ["Fidel","Lenin","Che","Zedong","Zapata"]
+		"outerColor": [10,56,19],
+		"innerColor": [209,170,43],
+		"cities": ".",
+		"spyNames": ["Fidel","Lenin","Che","Zedong","Zapata"],
 	}
-]
+		]
