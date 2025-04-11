@@ -17,7 +17,7 @@
             "[+1] Sight",
             "May establish [Resistance Camp] improvements",
             "Can build [Underground Tunnel] improvements",
-            "[+1] Movement while on [Underground Tunnel]",
+            "[+3] Movement while on [Underground Tunnel]",
             "Ignores terrain cost while on [Underground Tunnel]",
             "Can move immediately once bought"
         ]
@@ -34,7 +34,7 @@
         "uniques": [
             "Always invisible",
             "Can move after attacking",
-            "[+1] Movement while on [Underground Tunnel]",
+            "[+3] Movement while on [Underground Tunnel]",
             "Ignores terrain cost while on [Underground Tunnel]",
             "May attack when embarked",
             "[+1] Sight",
