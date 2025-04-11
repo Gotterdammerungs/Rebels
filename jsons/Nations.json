@@ -18,7 +18,6 @@
             "Starts with [2] [Resistance Engineer] units",
             "[+1] Movement for all units",
             "[+20]% Strength when fighting in enemy territory",
-            "All units move on water tiles as if they were land",
             "Units ignore terrain costs",
             "[-50]% maintenance costs",
             "Can see invisible enemy units",
@@ -30,7 +29,7 @@
             "Gain [25] [Science] when destroying a [Luxury resource]",
             "Gain [25] [Production] when destroying a [Strategic resource]",
             "[+2] Movement for [Great General] units",
-            "May buy [Military] units with [Gold] for [2] times their normal cost",
+            "May buy [Military] units with [Gold] for [0.5] times their normal cost",
             "Receive [Culture] from each enemy unit killed equal to [50]% of their [Strength]",
             "[+15]% chance to convert defeated enemy units near [Propaganda Posters]",
             "Starts with [Writing] tech"
