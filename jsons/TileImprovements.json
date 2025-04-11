@@ -20,6 +20,7 @@
             "When adjacent to [Luxury resource], provides [3] [Gold]",
             "When adjacent to [Strategic resource], provides [2] [Production]",
             "Can only be removed by enemy units or a [Resistance Engineer]",
+            "Can be built in enemy territory",
             "Produces [1] [Great General] points per turn"
         ],
         "validTerrainFeatures": ["Forest", "Hill", "Jungle"],
@@ -41,6 +42,7 @@
             "Connects to [Underground Tunnel]",
             "[+1] Movement point cost",
             "Only The Resistance units may enter this tile",
+            "Can be built in enemy territory",
             "Only available after researching [Mining]"
         ],
         "validTerrainFeatures": ["Hill", "Forest", "Jungle", "Plains", "Grassland", "Desert", "Tundra", "Snow"],
@@ -62,7 +64,7 @@
             "When activated deals [30] damage to units on tile",
             "[+100]% damage to [Armored] units",
             "Self-destructs after activation",
-            "Can only be removed by activation or a [Resistance Engineer] unit",
+            "Can be built in enemy territory",
             "Only available after researching [Engineering]"
         ],
         "validTerrainFeatures": ["Land"],
@@ -86,8 +88,10 @@
             "Can be removed by spending [1] movement point",
             "Provides [1] [Culture] per turn",
             "When constructed, spreads to [1] additional random adjacent tiles",
+            "Can be built in enemy territory",
             "Self-destructs after [15] turns",
             "When in [Forest] tiles, range increased by [1]",
+            "Can be built in enemy territory",
             "When in [Hill] tiles, effects increased by [25]%"
         ],
         "validTerrainFeatures": ["Forest", "Hill", "Jungle", "Plains", "Grassland", "Desert", "Tundra", "Snow"],
