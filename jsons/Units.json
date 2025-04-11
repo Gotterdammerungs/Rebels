@@ -1,13 +1,46 @@
 [
-	{
-		"name": "Rebel",
-		"unitType": "Melee",
-		"uniqueTo": "Aliens",
-		"replaces": "Settler",
-		"movement": 2,
-		"strength": 40,
-		"cost": 500,
-		"uniques": ["[+1 Science] per every [2] [Science]","[+1 Gold] per every [2] [Gold]","[+1 Science] per every [2] [Science]","[-25]% Gold cost of upgrading","[-25]% Gold cost of upgrading","[+50] Gold from pillaging improvements",
-			}
-	}
+    {
+        "name": "Resistance Engineer",
+        "unitType": "Civilian",
+        "uniqueTo": "The Resistance",
+        "replaces": "Worker",
+        "movement": 3,
+        "cost": 70,
+        "uniques": [
+            "Can build [All] improvements on tiles without a city",
+            "Can build improvements in enemy territory",
+            "Can build improvements on tiles not owned by any civilization",
+            "Can build [Propaganda Posters] improvements",
+            "Can build [Demolition Charge] improvements",
+            "Invisible to non-adjacent units",
+            "Can move after attacking",
+            "[+1] Sight",
+            "May establish [Resistance Camp] improvements",
+            "Can build [Underground Tunnel] improvements",
+            "[+1] Movement while on [Underground Tunnel]",
+            "Ignores terrain cost while on [Underground Tunnel]",
+            "Can move immediately once bought"
+        ]
+    },
+    {
+        "name": "Shadow Agent",
+        "unitType": "Scout",
+        "uniqueTo": "The Resistance",
+        "movement": 3,
+        "strength": 15,
+        "rangedStrength": 15,
+        "range": 1,
+        "cost": 80,
+        "uniques": [
+            "Always invisible",
+            "Can move after attacking",
+            "[+1] Movement while on [Underground Tunnel]",
+            "Ignores terrain cost while on [Underground Tunnel]",
+            "May attack when embarked",
+            "[+1] Sight",
+            "Can see invisible units",
+            "No defensive terrain bonus"
+        ],
+        "promotions": ["Stealth"]
+    }
 ]
