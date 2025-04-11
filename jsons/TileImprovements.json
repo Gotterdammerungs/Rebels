@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Resistance Camp",
+        "uniqueTo": "The Resistance",
+        "turnsToBuild": 3,
+        "uniques": [
+            "Can be built outside your borders",
+            "Can be built on tiles adjacent to enemy territory",
+            "Removes other improvements when built",
+            "Gives a defensive bonus of [50]%",
+            "Provides [3] [Gold] per turn",
+            "Provides [2] [Production] per turn",
+            "Provides [2] [Science] per turn",
+            "Provides [1] [Culture] per turn",
+            "All adjacent units heal [10] HP when healing",
+            "Can recruit [All] units that cost less than [120] [Gold]",
+            "[-25]% Production cost of [Military] units built on this tile",
+            "Newly created units start with [20] Experience",
+            "Must be at least [3] tiles from another [Resistance Camp]",
+            "When adjacent to [Luxury resource], provides [3] [Gold]",
+            "When adjacent to [Strategic resource], provides [2] [Production]",
+            "Can only be removed by enemy units or a [Resistance Engineer]",
+            "Produces [1] [Great General] points per turn"
+        ],
+        "validTerrainFeatures": ["Forest", "Hill", "Jungle"],
+        "defenseBonus": 2,
+        "movementCost": 1,
+        "maintenance": 0,
+        "faith": 1
+    },
+    {
+        "name": "Underground Tunnel",
+        "uniqueTo": "The Resistance",
+        "turnsToBuild": 2,
+        "uniques": [
+            "Can be built outside your borders",
+            "Can be built on tiles adjacent to enemy territory",
+            "Invisible to non-adjacent units",
+            "Cannot be used by non-owner player units",
+            "Gives a defensive bonus of [25]%",
+            "Connects to [Underground Tunnel]",
+            "[+1] Movement point cost",
+            "Only The Resistance units may enter this tile",
+            "Only available after researching [Mining]"
+        ],
+        "validTerrainFeatures": ["Hill", "Forest", "Jungle", "Plains", "Grassland", "Desert", "Tundra", "Snow"],
+        "movementCost": 0.25,
+        "defenseBonus": 1,
+        "hashtag": "#underground"
+    },
+    {
+        "name": "Demolition Charge",
+        "uniqueTo": "The Resistance",
+        "turnsToBuild": 1,
+        "uniques": [
+            "Can be built outside your borders",
+            "Can be built on tiles adjacent to enemy territory",
+            "Can be built on tiles with improvements",
+            "Invisible to non-adjacent units",
+            "Removes all improvements and features on the tile when activated",
+            "Destroys roads on the tile when activated",
+            "When activated deals [30] damage to units on tile",
+            "[+100]% damage to [Armored] units",
+            "Self-destructs after activation",
+            "Can only be removed by activation or a [Resistance Engineer] unit",
+            "Only available after researching [Engineering]"
+        ],
+        "validTerrainFeatures": ["Land"],
+        "cannotBeBuiltOn": ["Mountain"],
+        "defenseBonus": -0.5,
+        "hash": "#sabotage"
+    },
+    {
+        "name": "Propaganda Posters",
+        "uniqueTo": "The Resistance",
+        "turnsToBuild": 1,
+        "uniques": [
+            "Can be built outside your borders",
+            "Can be built on tiles adjacent to enemy territory",
+            "Can be built on any terrain except [Mountain]",
+            "Invisible to non-adjacent units",
+            "Adjacent enemy units receive [-15]% combat bonus",
+            "Enemy units cost [+1] movement points to move through tiles in range [2]",
+            "[+10]% Strength bonus for your units within [2] tiles",
+            "Enemy units within [2] tiles may defect when attacked",
+            "Can be removed by spending [1] movement point",
+            "Provides [1] [Culture] per turn",
+            "When constructed, spreads to [1] additional random adjacent tiles",
+            "Self-destructs after [15] turns",
+            "When in [Forest] tiles, range increased by [1]",
+            "When in [Hill] tiles, effects increased by [25]%"
+        ],
+        "validTerrainFeatures": ["Forest", "Hill", "Jungle", "Plains", "Grassland", "Desert", "Tundra", "Snow"],
+        "turnsToBuildOnFeatures": 1,
+        "culture": 1,
+        "maintenance": 0
+    }
+]
