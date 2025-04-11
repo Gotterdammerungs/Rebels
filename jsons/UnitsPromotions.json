@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Stealth",
+        "uniques": [
+            "Always invisible",
+            "Can move after attacking",
+            "[+1] Movement",
+            "Can see invisible units"
+        ]
+    },
+    {
+        "name": "Stealth II",
+        "prerequisites": ["Stealth"],
+        "uniques": [
+            "Always invisible",
+            "[+1] Movement",
+            "[+15]% Strength when attacking",
+            "Can move after attacking"
+        ]
+    },
+    {
+        "name": "Ghost Protocol",
+        "prerequisites": ["Stealth II"],
+        "uniques": [
+            "Always invisible",
+            "[+1] Movement",
+            "[+20]% Strength when attacking",
+            "Heals [25] damage if it kills a unit",
+            "Can move after attacking"
+        ]
+    }
+]
