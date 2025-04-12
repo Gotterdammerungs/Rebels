@@ -1,66 +1,56 @@
-[
-    {
-        "name": "The Resistance",
-        "leaderName": "Garibaldi",
-        "adjective": ["Rebellious"],
-        "preferredVictoryType": "Domination",
-        
-        "startIntroPart1": "Welcome to the shadows. Your enemies' strength shall become their weakness.",
-        "startIntroPart2": "Will you bring down their empire from within, using stealth, sabotage, and the power of the people?",
-        
-        "declaringWar": "Your infrastructure will crumble, your supply lines will burn!",
-        "attacked": "You'll regret giving us targets to destroy!",
-        "defeated": "Our charges may be defused, but the spark of rebellion remains...",
-        "introduction": "We could be anywhere. Your roads, your mines, your improvements - nothing is safe.",
-        
-        "uniques": [
-            "[+1] Movement <for [All] units>",
-            "[+20]% Strength <when fighting in [Foreign Land] tiles>",
-            "All units ignore terrain cost",
-            "[-50]% maintenance cost for military units",
-            "Can see invisible enemy units",
-            "[+1] Sight <for [All] units>",
-            "Units may be upgraded for [50]% of the usual cost",
-            "All newly-trained units start with [20] Experience",
-            "Units may enter foreign tiles without open borders",
-            "[+2] Movement <for [Great General] units>",
-            "May buy [Military] units with [Gold] for [0.5] times their normal cost",
-            "Receive [Culture] from kills equal to [50]% of [Strength]",
-            "Starts with [Writing]"
-        ],
-          
-        "cityNames": [
-            "New Dawn",
-            "Freedom's Flame",
-            "Liberty Hold",
-            "Underground Haven",
-            "Sanctuary",
-            "Phoenix Nest",
-            "Shadow's Refuge",
-            "Iron Will",
-            "Rebel's Rest",
-            "Hope's Bastion"
-        ],
-        
-        "outerColor": [10, 56, 19],
-        "innerColor": [209, 170, 43],
-        
-        "uniqueNames": {
-            "units": ["Alpha", "Beta", "Gamma", "Delta", "Epsilon", 
-                     "Zeta", "Eta", "Theta", "Iota", "Kappa"]
-        },
-        
-        "spyNames": [
-            "Ghost",
-            "Shadow",
-            "Echo",
-            "Whisper",
-            "Specter",
-            "Phantom",
-            "Wraith",
-            "Night",
-            "Dusk",
-            "Storm"
-        ]
-    }
-]
+{
+    "name": "The Resistance",
+    "leaderName": "The Commander",
+    "adjective": ["Resistance"],
+    "startBias": ["Hill", "Forest"],
+    "preferredVictoryType": "Domination",
+    
+    "startIntroPart1": "The people rise against oppression!",
+    "startIntroPart2": "Lead the Resistance, strike from the shadows, and liberate the oppressed. Victory through guerrilla warfare!",
+    
+    "declaringWar": "Your tyranny ends now!",
+    "attacked": "You dare attack the people's resistance?",
+    "defeated": "The resistance... lives on...",
+    "introduction": "We are the voice of the oppressed. Will you stand with us?",
+    
+    "neutralHello": "What news from the front?",
+    "neutralLetsHearIt": ["Speak.", "Go on."],
+    "neutralNo": ["We must decline.", "Not acceptable."],
+    "neutralYes": ["Agreed.", "Very well."],
+
+    "hateHello": "What do you want, oppressor?",
+    "hateLetsHearIt": ["Speak quickly.", "Out with it."],
+    "hateNo": ["Never!", "We resist!"],
+    "hateYes": ["Very well.", "If we must."],
+    
+    "afterPeace": "Remember, the people will always resist tyranny.",
+    "tradeRequest": "The resistance proposes this exchange.",
+
+    "outerColor": [45, 45, 45],
+    "innerColor": [165, 0, 0],
+
+    "uniqueName": "Underground Network",
+    "uniques": [
+        "Cannot build [Cities]",
+        "[+1] Movement <for [All] units>",
+        "[+20]% Strength <when fighting in [Foreign Land] tiles>",
+        "Units ignore terrain costs",
+        "Unit maintenance costs reduced by [50]%",
+        "All newly constructed units start with [20] XP",
+        "Units pay only [50]% of the normal cost when upgrading",
+        "Cannot build [Settler] units",
+        "May buy [Military] units with [Gold] for [2] times their normal cost",
+        "Receive [Culture] from each killed unit equal to [50]% of its Strength",
+        "Units may enter foreign tiles without open borders",
+        "[+2] Movement <for [Great General] units>",
+        "Starts with [Writing]",
+        "Starts with [Animal Husbandry]",
+        "Starts with [Mining]",
+        "Starts with [Masonry]",
+        "Starts with [1] [Resistance Engineer] units",
+        "Starts with [2] [Militia] units",
+        "Starts with [1] [Scout] units"
+    ],
+    "cities": ["Resistance HQ", "Liberation Front", "Freedom Fighters", "People's Army", "Underground Base",
+               "Shadow Command", "Rebel Stronghold", "Resistance Cell", "Forward Base", "Hidden Valley"]
+}
