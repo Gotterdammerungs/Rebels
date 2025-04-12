@@ -13,10 +13,10 @@
             "Can build [Demolition Charge] improvements on tiles",
             "Can build [Forward Camp] improvements on tiles",
             "Can build [Propaganda Posters] improvements on tiles",
-            "Invisible to non-adjacent units",
-            "Only available for [The Resistance]"
+            "Invisible to non-adjacent units"
         ],
-        "promotions": ["Guerrilla Training"]
+        "promotions": ["Guerrilla Training"],
+        "attackSound": "nonmetal"
     },
     {
         "name": "Militia",
@@ -27,15 +27,16 @@
         "cost": 40,
         "requiredTech": "Archery",
         "uniques": [
-            "Only available for [The Resistance]",
             "Can move after attacking",
             "Invisible to non-adjacent units",
             "[+25]% Strength <when fighting in [Foreign Land] tiles>"
         ],
-        "promotions": ["Guerrilla Training"]
+        "promotions": ["Guerrilla Training"],
+        "attackSound": "nonmetal"
     },
     {
         "name": "Scout",
+        "uniqueTo": "The Resistance",
         "unitType": "Scout",
         "movement": 2,
         "strength": 5,
@@ -43,10 +44,10 @@
         "obsoleteTech": "Scientific Theory",
         "uniques": [
             "Can see over obstacles",
-            "Only available for [The Resistance]",
             "Invisible to non-adjacent units",
             "[+1] Sight"
         ],
-        "promotions": ["Guerrilla Training"]
+        "promotions": ["Guerrilla Training"],
+        "attackSound": "nonmetal"
     }
 ]
