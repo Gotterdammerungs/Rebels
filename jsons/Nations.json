@@ -34,6 +34,19 @@
             "[+15]% chance to convert defeated enemy units near [Propaganda Posters]",
             "Starts with [Writing] tech"
         ],
+          
+        "cityNames": [
+            "New Dawn",
+            "Freedom's Flame",
+            "Liberty Hold",
+            "Underground Haven",
+            "Sanctuary",
+            "Phoenix Nest",
+            "Shadow's Refuge",
+            "Iron Will",
+            "Rebel's Rest",
+            "Hope's Bastion"
+        ],
         
         "outerColor": [10, 56, 19],
         "innerColor": [209, 170, 43],
