@@ -3,8 +3,8 @@
         "name": "Stealth",
         "uniques": [
             "Invisible to non-adjacent units",
-            "Can move after attacking",
             "[+1] Movement",
+            "Only available for [The Resistance]",
             "Can see invisible units"
         ]
     },
@@ -12,9 +12,10 @@
         "name": "Stealth II",
         "prerequisites": ["Stealth"],
         "uniques": [
-            "Always invisible",
+            "Invisible to others",
             "[+1] Movement",
             "[+15]% Strength when attacking",
+            "Only available for [The Resistance]",
             "Can move after attacking"
         ]
     },
@@ -22,48 +23,19 @@
         "name": "Ghost Protocol",
         "prerequisites": ["Stealth II"],
         "uniques": [
-            "Always invisible",
+            "Invisible to others",
             "[+1] Movement",
             "[+20]% Strength when attacking",
+            "Only available for [The Resistance]",
             "Heals [25] damage if it kills a unit",
             "Can move after attacking"
-        ]
-    },
-    {
-        "name": "Tunnel Runner",
-        "uniques": [
-            "[+2] Movement while on [Underground Tunnel]",
-            "Ignores terrain cost while on [Underground Tunnel]",
-            "Unit can move freely through [Underground Tunnel] tiles",
-            "[+1] Sight when on [Underground Tunnel]"
-        ]
-    },
-    {
-        "name": "Tunnel Master",
-        "prerequisites": ["Tunnel Runner"],
-        "uniques": [
-            "[+3] Movement while on [Underground Tunnel]",
-            "Can move after attacking when on [Underground Tunnel]",
-            "All tiles with [Underground Tunnel] cost [0] movement",
-            "Unit can see invisible units when on [Underground Tunnel]"
-        ]
-    },
-    {
-        "name": "Tunnel Ambusher",
-        "prerequisites": ["Tunnel Master"],
-        "uniques": [
-            "[+25]% Strength when attacking from [Underground Tunnel]",
-            "Can move immediately after attacking from [Underground Tunnel]",
-            "Heals [15] damage if it starts its turn on [Underground Tunnel]",
-            "[+2] Sight while on [Underground Tunnel]"
         ]
     },
     {
         "name": "Resistance Fighter",
         "uniques": [
             "[+15]% Strength when fighting in enemy territory",
-            "[+1] Movement in enemy territory",
-            "Can see invisible units",
+            "Only available for [The Resistance]",
             "Heals [10] HP when healing in enemy territory"
         ]
     },
@@ -72,29 +44,10 @@
         "prerequisites": ["Resistance Fighter"],
         "uniques": [
             "[+25]% Strength when fighting in enemy territory",
+            "Only available for [The Resistance]",
             "[+2] Movement in enemy territory",
             "Heals [15] HP when healing in enemy territory",
             "Can move after attacking in enemy territory"
-        ]
-    },
-    {
-        "name": "Saboteur",
-        "uniques": [
-            "[+50]% Strength when attacking [Improvement]",
-            "Can move after attacking [Improvement]",
-            "[+1] Movement when adjacent to [Improvement]",
-            "Unit can build [Demolition Charge] improvements"
-        ]
-    },
-    {
-        "name": "Master Saboteur",
-        "prerequisites": ["Saboteur"],
-        "uniques": [
-            "[+100]% Strength when attacking [Improvement]",
-            "Can move after attacking [Improvement]",
-            "[+2] Movement when adjacent to [Improvement]",
-            "Ignores Zone of Control",
-            "All tiles with [Improvement] cost [1] movement"
         ]
     }
 ]
