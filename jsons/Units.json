@@ -7,18 +7,10 @@
         "movement": 3,
         "cost": 70,
         "uniques": [
-            "Can build [All] improvements on tiles without a city",
-            "Can build improvements in enemy territory",
-            "Can build improvements on tiles not owned by any civilization",
-            "Can build [Propaganda Posters] improvements",
-            "Can build [Demolition Charge] improvements",
+            "Can build [All] improvements on tiles",
             "Invisible to non-adjacent units",
             "Can move after attacking",
             "[+1] Sight",
-            "May establish [Resistance Camp] improvements",
-            "Can build [Underground Tunnel] improvements",
-            "[+3] Movement while on [Underground Tunnel]",
-            "Ignores terrain cost while on [Underground Tunnel]",
             "Can move immediately once bought"
         ]
     },
@@ -32,10 +24,8 @@
         "range": 1,
         "cost": 80,
         "uniques": [
-            "Always invisible",
+            "Invisible to others",
             "Can move after attacking",
-            "[+3] Movement while on [Underground Tunnel]",
-            "Ignores terrain cost while on [Underground Tunnel]",
             "May attack when embarked",
             "[+1] Sight",
             "Can see invisible units",
