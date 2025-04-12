@@ -1,36 +1,52 @@
 [
     {
         "name": "Resistance Engineer",
-        "unitType": "Civilian",
         "uniqueTo": "The Resistance",
-        "replaces": "Settler",
-        "movement": 3,
-        "cost": 70,
+        "unitType": "Civilian",
+        "movement": 2,
+        "strength": 5,
+        "cost": 100,
         "uniques": [
-            "Can build [All] improvements on tiles",
+            "Can build [Land] improvements on tiles",
+            "Can build [Resistance Base] improvements on tiles",
+            "Can build [Underground Tunnel] improvements on tiles",
+            "Can build [Demolition Charge] improvements on tiles",
+            "Can build [Forward Camp] improvements on tiles",
+            "Can build [Propaganda Posters] improvements on tiles",
             "Invisible to non-adjacent units",
-            "Can move after attacking",
-            "[+1] Sight",
-            "Can move immediately once bought"
-        ]
+            "Only available for [The Resistance]"
+        ],
+        "promotions": ["Guerrilla Training"]
     },
     {
-        "name": "Shadow Agent",
-        "unitType": "Scout",
+        "name": "Militia",
         "uniqueTo": "The Resistance",
-        "movement": 3,
-        "strength": 15,
-        "rangedStrength": 15,
-        "range": 1,
-        "cost": 80,
+        "unitType": "Melee",
+        "movement": 2,
+        "strength": 8,
+        "cost": 40,
+        "requiredTech": "Archery",
         "uniques": [
-            "Invisible to others",
+            "Only available for [The Resistance]",
             "Can move after attacking",
-            "Can attack while embarked",
-            "[+1] Sight",
-            "Can see invisible units",
-            "No defensive terrain bonus"
+            "Invisible to non-adjacent units",
+            "[+25]% Strength <when fighting in [Foreign Land] tiles>"
         ],
-        "promotions": ["Stealth"]
+        "promotions": ["Guerrilla Training"]
+    },
+    {
+        "name": "Scout",
+        "unitType": "Scout",
+        "movement": 2,
+        "strength": 5,
+        "cost": 25,
+        "obsoleteTech": "Scientific Theory",
+        "uniques": [
+            "Can see over obstacles",
+            "Only available for [The Resistance]",
+            "Invisible to non-adjacent units",
+            "[+1] Sight"
+        ],
+        "promotions": ["Guerrilla Training"]
     }
 ]
