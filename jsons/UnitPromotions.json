@@ -1,0 +1,53 @@
+[
+    {
+        "name": "Stealth",
+        "uniques": [
+            "Invisible to non-adjacent units",
+            "[+1] Movement",
+            "Can see invisible units",
+            "Unique to [The Resistance]"  // Changed from "Only available for"
+        ]
+    },
+    {
+        "name": "Stealth II",
+        "prerequisites": ["Stealth"],
+        "uniques": [
+            "Invisible to others",
+            "[+1] Movement",
+            "[+15]% Strength <when attacking>",  // Added angle brackets
+            "Can move after attacking",
+            "Unique to [The Resistance]"  // Changed from "Only available for"
+        ]
+    },
+    {
+        "name": "Ghost Protocol",
+        "prerequisites": ["Stealth II"],
+        "uniques": [
+            "Invisible to others",
+            "[+1] Movement",
+            "[+20]% Strength <when attacking>",  // Added angle brackets
+            "Heals [25] damage if it kills a unit",
+            "Can move after attacking",
+            "Unique to [The Resistance]"  // Changed from "Only available for"
+        ]
+    },
+    {
+        "name": "Resistance Fighter",
+        "uniques": [
+            "[+15]% Strength <when fighting in [Foreign Land] tiles>",  // Changed enemy territory syntax
+            "Heals [10] HP when healing in enemy territory",
+            "Unique to [The Resistance]"  // Changed from "Only available for"
+        ]
+    },
+    {
+        "name": "Resistance Elite",
+        "prerequisites": ["Resistance Fighter"],
+        "uniques": [
+            "[+25]% Strength <when fighting in [Foreign Land] tiles>",  // Changed enemy territory syntax
+            "[+2] Movement <when in [Foreign Land] tiles>",  // Changed enemy territory syntax
+            "Heals [15] HP when healing in enemy territory",
+            "Can move after attacking <when in [Foreign Land] tiles>",  // Added proper condition syntax
+            "Unique to [The Resistance]"  // Changed from "Only available for"
+        ]
+    }
+]
