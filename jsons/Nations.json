@@ -14,24 +14,19 @@
         "introduction": "We could be anywhere. Your roads, your mines, your improvements - nothing is safe.",
         
         "uniques": [
-            "Cannot build [Settler] units",
-            "[+1] Movement for all units",
-            "[+20]% Strength when fighting in enemy territory",
-            "Units ignore terrain costs",
-            "[-50]% maintenance costs",
+            "[+1] Movement <for [All] units>",
+            "[+20]% Strength <when fighting in [Foreign Land] tiles>",
+            "All units ignore terrain cost",
+            "[-50]% maintenance cost for military units",
             "Can see invisible enemy units",
-            "[+1] Sight for all units",
-            "May upgrade units for [50]% of the normal cost",
+            "[+1] Sight <for [All] units>",
+            "Units may be upgraded for [50]% of the usual cost",
             "All newly-trained units start with [20] Experience",
             "Units may enter foreign tiles without open borders",
-            "Gain [50] [Gold] when destroying an improvement",
-            "Gain [25] [Science] when destroying a [Luxury resource]",
-            "Gain [25] [Production] when destroying a [Strategic resource]",
-            "[+2] Movement for [Great General] units",
+            "[+2] Movement <for [Great General] units>",
             "May buy [Military] units with [Gold] for [0.5] times their normal cost",
-            "Receive [Culture] from each enemy unit killed equal to [50]% of their [Strength]",
-            "[+15]% chance to convert defeated enemy units near [Propaganda Posters]",
-            "Starts with [Writing] tech"
+            "Receive [Culture] from kills equal to [50]% of [Strength]",
+            "Starts with [Writing]"
         ],
           
         "cityNames": [
