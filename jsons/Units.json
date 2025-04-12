@@ -3,7 +3,7 @@
         "name": "Resistance Engineer",
         "unitType": "Civilian",
         "uniqueTo": "The Resistance",
-        "replaces": "Worker",
+        "replaces": "Settler",
         "movement": 3,
         "cost": 70,
         "uniques": [
