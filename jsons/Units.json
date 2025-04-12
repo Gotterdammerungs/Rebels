@@ -26,7 +26,7 @@
         "uniques": [
             "Invisible to others",
             "Can move after attacking",
-            "May attack when embarked",
+            "Can attack while embarked",
             "[+1] Sight",
             "Can see invisible units",
             "No defensive terrain bonus"
