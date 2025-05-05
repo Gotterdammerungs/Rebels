@@ -4,13 +4,12 @@
         "uniques": [
             "Invisible to non-adjacent units",
             "Can move after attacking",
-            "[+15]% Strength <when fighting in [Forest] tiles>",
-            "[+15]% Strength <when fighting in [Jungle] tiles>",
-            "[+1] Movement in [Forest]",
-            "[+1] Movement in [Jungle]"
+            "[+15]% Strength <when fighting in [Forest]>",
+            "[+15]% Strength <when fighting in [Jungle]>",
+            "[+1] Movement <in [Forest]>",
+            "[+1] Movement <in [Jungle]>"
         ]
     },
-    // ... your existing promotions ...
     {
         "name": "Stealth",
         "uniques": [
@@ -46,7 +45,7 @@
     {
         "name": "Resistance Fighter",
         "uniques": [
-            "[+15]% Strength <when fighting in [Foreign Land] tiles>",
+            "[+15]% Strength <when fighting in [Foreign Land]>",
             "Heals [10] HP when healing in enemy territory",
             "Unique to [The Resistance]"
         ]
@@ -55,10 +54,10 @@
         "name": "Resistance Elite",
         "prerequisites": ["Resistance Fighter"],
         "uniques": [
-            "[+25]% Strength <when fighting in [Foreign Land] tiles>",
-            "[+2] Movement <when in [Foreign Land] tiles>",
+            "[+25]% Strength <when fighting in [Foreign Land]>",
+            "[+2] Movement <when in [Foreign Land]>",
             "Heals [15] HP when healing in enemy territory",
-            "Can move after attacking <when in [Foreign Land] tiles>",
+            "Can move after attacking <when in [Foreign Land]>",
             "Unique to [The Resistance]"
         ]
     }
