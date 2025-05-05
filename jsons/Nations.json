@@ -33,7 +33,7 @@
     "uniques": [
         "Cannot build [Cities]",
         "[+1] Movement <for [All] units>",
-        "[+20]% Strength <when fighting in [Foreign Land] tiles>",
+        "[+20]% Strength <when fighting in [Foreign Land]>",
         "Units ignore terrain costs",
         "Unit maintenance costs reduced by [50]%",
         "All newly constructed units start with [20] XP",
@@ -47,9 +47,9 @@
         "Starts with [Animal Husbandry]",
         "Starts with [Mining]",
         "Starts with [Masonry]",
-        "Starts with [1] [Resistance Engineer] units",
-        "Starts with [2] [Militia] units",
-        "Starts with [1] [Scout] units"
+        "Starts with [1] [Resistance Engineer]",
+        "Starts with [2] [Militia]",
+        "Starts with [1] [Scout]"
     ],
     "cities": ["Resistance HQ", "Liberation Front", "Freedom Fighters", "People's Army", "Underground Base",
                "Shadow Command", "Rebel Stronghold", "Resistance Cell", "Forward Base", "Hidden Valley"]
