@@ -7,12 +7,12 @@
         "strength": 5,
         "cost": 100,
         "uniques": [
-            "Can build [Land] improvements on tiles",
-            "Can build [Resistance Base] improvements on tiles",
-            "Can build [Underground Tunnel] improvements on tiles",
-            "Can build [Demolition Charge] improvements on tiles",
-            "Can build [Forward Camp] improvements on tiles",
-            "Can build [Propaganda Posters] improvements on tiles",
+            "Can build [Land] improvements",
+            "Can build [Resistance Base]",
+            "Can build [Underground Tunnel]",
+            "Can build [Demolition Charge]",
+            "Can build [Forward Camp]",
+            "Can build [Propaganda Posters]",
             "Invisible to non-adjacent units"
         ],
         "promotions": ["Guerrilla Training"],
@@ -29,7 +29,7 @@
         "uniques": [
             "Can move after attacking",
             "Invisible to non-adjacent units",
-            "[+25]% Strength <when fighting in [Foreign Land] tiles>"
+            "[+25]% Strength <when fighting in [Foreign Land]>"
         ],
         "promotions": ["Guerrilla Training"],
         "attackSound": "nonmetal"
