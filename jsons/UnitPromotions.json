@@ -1,64 +1,21 @@
 [
     {
-        "name": "Guerrilla Training",
+        "name": "PROMOTION_REBEL_FREEDOM",
+
         "uniques": [
-            "Invisible to non-adjacent units",
-            "Can move after attacking",
-            "[+15]% Strength <when fighting in [Forest]>",
-            "[+15]% Strength <when fighting in [Jungle]>",
-            "[+1] Movement <in [Forest]>",
-            "[+1] Movement <in [Jungle]>"
-        ]
-    },
-    {
-        "name": "Stealth",
-        "uniques": [
-            "Invisible to non-adjacent units",
-            "[+1] Movement",
-            "Can see invisible units",
-            "Unique to [The Resistance]"
-        ]
-    },
-    {
-        "name": "Stealth II",
-        "prerequisites": ["Stealth"],
-        "uniques": [
-            "Invisible to others",
-            "[+1] Movement",
-            "[+15]% Strength <when attacking>",
-            "Can move after attacking",
-            "Unique to [The Resistance]"
-        ]
-    },
-    {
-        "name": "Ghost Protocol",
-        "prerequisites": ["Stealth II"],
-        "uniques": [
-            "Invisible to others",
-            "[+1] Movement",
-            "[+20]% Strength <when attacking>",
-            "Heals [25] damage if it kills a unit",
-            "Can move after attacking",
-            "Unique to [The Resistance]"
-        ]
-    },
-    {
-        "name": "Resistance Fighter",
-        "uniques": [
-            "[+15]% Strength <when fighting in [Foreign Land]>",
-            "Heals [10] HP when healing in enemy territory",
-            "Unique to [The Resistance]"
-        ]
-    },
-    {
-        "name": "Resistance Elite",
-        "prerequisites": ["Resistance Fighter"],
-        "uniques": [
-            "[+25]% Strength <when fighting in [Foreign Land]>",
-            "[+2] Movement <when in [Foreign Land]>",
-            "Heals [15] HP when healing in enemy territory",
-            "Can move after attacking <when in [Foreign Land]>",
-            "Unique to [The Resistance]"
-        ]
+            // This unique allows units with this promotion to enter foreign tiles without needing open borders agreements.
+            // It is active ONLY when the Rebel Civilization owns 0 actual cities.
+            // This is how the "go anywhere, including enemy territory" buff works and is removed.
+            "May enter foreign tiles without open borders <when number of [Cities] is equal to [0]>",
+
+            // This unique makes all terrain tiles cost only 1 movement point for units with this promotion.
+            // It is also active ONLY when the Rebel Civilization owns 0 actual cities,
+            // representing the increased mobility during the "rebel phase".
+            "All tiles cost 1 movement <when number of [Cities] is equal to [0]>"
+        ],
+
+        // This ensures the promotion does not clutter the Civilopedia, as its effects are conditional
+        // and primarily tied to the unique civ mechanics.
+        "willNotBeDisplayedInCivilopedia": true
     }
 ]
