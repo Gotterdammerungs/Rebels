@@ -1,56 +1,33 @@
-{
-    "name": "The Resistance",
-    "leaderName": "The Commander",
-    "adjective": ["Resistance"],
-    "startBias": ["Hill", "Forest"],
-    "preferredVictoryType": "Domination",
-    
-    "startIntroPart1": "The people rise against oppression!",
-    "startIntroPart2": "Lead the Resistance, strike from the shadows, and liberate the oppressed. Victory through guerrilla warfare!",
-    
-    "declaringWar": "Your tyranny ends now!",
-    "attacked": "You dare attack the people's resistance?",
-    "defeated": "The resistance... lives on...",
-    "introduction": "We are the voice of the oppressed. Will you stand with us?",
-    
-    "neutralHello": "What news from the front?",
-    "neutralLetsHearIt": ["Speak.", "Go on."],
-    "neutralNo": ["We must decline.", "Not acceptable."],
-    "neutralYes": ["Agreed.", "Very well."],
+[
+    {
+        "name": "The Rebels",
+        "leaderName": "The Insurgent",
+        "adjective": ["Rebel"],
+        "startBias": ["Avoid [Water]"],
+        "preferredVictoryType": "Domination",
 
-    "hateHello": "What do you want, oppressor?",
-    "hateLetsHearIt": ["Speak quickly.", "Out with it."],
-    "hateNo": ["Never!", "We resist!"],
-    "hateYes": ["Very well.", "If we must."],
-    
-    "afterPeace": "Remember, the people will always resist tyranny.",
-    "tradeRequest": "The resistance proposes this exchange.",
+        "startIntroPart1": "You are the leader of the scattered Rebel forces, fighting against the established order. Your people cannot found traditional cities, but instead establish temporary camps.",
+        "startIntroPart2": "Will you overthrow your oppressors and establish a new order, or will your movement be crushed?",
 
-    "outerColor": [45, 45, 45],
-    "innerColor": [165, 0, 0],
+        "declaringWar": "Your tyranny ends now! Prepare for the true uprising!",
+        "attacked": "They dare to challenge the will of the people! They will regret this defiance!",
+        "defeated": "Perhaps our physical presence is crushed, but our spirit will live on to inspire future rebellions!",
+        "introduction": "We are the true liberators, fighting for freedom! Join us or be swept aside.",
+        "neutralHello": "Silence, tyrant! The only peace we seek is liberation.",
+        "hateHello": "The fight continues! You will fall!",
+        "tradeRequest": "We demand your surrender! There is no negotiation with oppressors.",
 
-    "uniqueName": "Underground Network",
-    "uniques": [
-        "Cannot build [Cities]",
-        "[+1] Movement <for [All] units>",
-        "[+20]% Strength <when fighting in [Foreign Land]>",
-        "Units ignore terrain costs",
-        "Unit maintenance costs reduced by [50]%",
-        "All newly constructed units start with [20] XP",
-        "Units pay only [50]% of the normal cost when upgrading",
-        "Cannot build [Settler] units",
-        "May buy [Military] units with [Gold] for [2] times their normal cost",
-        "Receive [Culture] from each killed unit equal to [50]% of its Strength",
-        "Units may enter foreign tiles without open borders",
-        "[+2] Movement <for [Great General] units>",
-        "Starts with [Writing]",
-        "Starts with [Animal Husbandry]",
-        "Starts with [Mining]",
-        "Starts with [Masonry]",
-        "Starts with [1] [Resistance Engineer]",
-        "Starts with [2] [Militia]",
-        "Starts with [1] [Scout]"
-    ],
-    "cities": ["Resistance HQ", "Liberation Front", "Freedom Fighters", "People's Army", "Underground Base",
-               "Shadow Command", "Rebel Stronghold", "Resistance Cell", "Forward Base", "Hidden Valley"]
-}
+        "outerColor": [70, 70, 70], // Dark grey
+        "innerColor": [200, 50, 50], // Rebel red
+        "uniqueName": "The Uprising",
+        "uniques": [
+            "All newly-trained [All] units receive the [PROMOTION_REBEL_FREEDOM] promotion",
+            "Cannot build [Settler] units"
+        ],
+
+        // Updated the spyNames field to be on a single line.
+        "spyNames": ["Che", "Castro", "Zapata", "Garibaldi", "Toussaint", "Mao", "Ho Chi Minh", "Mandela", "Bolívar", "San Martín", "Washington", "Stalin", "Lenin", "Luxemburg", "Guevara", "Fanon", "Malcom X", "Spartacus", "Boudica", "José Martí", "Pancho Villa", "Maximilien"],
+
+        "cities": ["."],
+    }
+]
