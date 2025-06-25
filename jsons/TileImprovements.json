@@ -1,47 +1,26 @@
 [
     {
-        "name": "Resistance Base",
-        "uniqueTo": "The Resistance",
-        "turnsToBuild": 3,
+        "name": "Rebel Camp",
+        // This improvement can be built on a wide variety of land and coastal terrain types.
+        "terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle","Flood plains","Marsh","Coast"],
+        
+        // Basic yields provided by the camp each turn. These are flat yields from the tile it's on.
+        "food": 2,
+        "production": 1,
+
         "uniques": [
+            // This unique allows the Rebel Camp to be built outside of your controlled borders,
+            // which is essential for the "build anywhere" rebel playstyle.
             "Can be built outside your borders",
-            "Can be built in foreign lands",
-            "Invisible to non-adjacent units",
-            "[+50]% Defensive bonus",
-            "Provides [5] [Production]",
-            "Provides [5] [Gold]",
-            "Provides [2] [Science]",
-            "Provides [1] [Culture]",
-            "Must be at least [4] tiles away from another [Resistance Base]",
-            "Gain a free [Scout] <upon being built>",
-            "Gain a free [Militia] <every [5] turns> <in [Foreign Land]>",
-            "Gain a free [Resistance Engineer] <every [10] turns>",
-            "Gain [50] [Gold] <every [15] turns>"
+
+            // This unique ensures that the tile where the Rebel Camp is built provides a minimum yield,
+            // similar to how a city center functions for its central tile.
+            "Ensures a minimum tile yield of [+2 Food, +1 Production]"
         ],
-        "terrainsCanBeBuiltOn": ["Plains", "Grassland", "Desert", "Tundra", "Snow", "Hill", "Forest", "Jungle"],
-        "defenseBonus": 2,
-        "movementCost": 1,
-        "maintenance": 0
-    },
-    {
-        "name": "Forward Camp",
-        "uniqueTo": "The Resistance",
-        "turnsToBuild": 2,
-        "uniques": [
-            "Can be built outside your borders",
-            "Can be built in foreign lands",
-            "Invisible to non-adjacent units",
-            "[+25]% Defensive bonus",
-            "Provides [3] [Production]",
-            "Provides [2] [Gold]",
-            "Must be at least [3] tiles away from another [Forward Camp]",
-            "Destroyed <after [20] turns>",
-            "Gain a free [Militia] <every [7] turns>",
-            "Gain [25] [Gold] <upon being built>"
-        ],
-        "terrainsCanBeBuiltOn": ["Plains", "Grassland", "Desert", "Tundra", "Snow", "Hill", "Forest", "Jungle"],
-        "defenseBonus": 1,
-        "movementCost": 1,
-        "maintenance": 0
+
+        // Text displayed in the Civilopedia when viewing information about the Rebel Camp.
+        "civilopediaText": [
+            {"text":"A temporary rebel outpost that provides basic yields and extends territory. It cannot grow population or produce units like a regular city. Multiple camps can serve as forward operating bases."}
+        ]
     }
 ]
