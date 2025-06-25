@@ -1,53 +1,31 @@
 [
     {
-        "name": "Resistance Engineer",
-        "uniqueTo": "The Resistance",
+        "name": "Rebel Engineer",
+        "replaces": "Settler", // This unit explicitly replaces the standard Settler unit.
         "unitType": "Civilian",
         "movement": 2,
-        "strength": 5,
-        "cost": 100,
+        "cost": 106, // The cost is set to be similar to a standard Settler.
+
         "uniques": [
-            "Can build [Land] improvements",
-            "Can build [Resistance Base]",
-            "Can build [Underground Tunnel]",
-            "Can build [Demolition Charge]",
-            "Can build [Forward Camp]",
-            "Can build [Propaganda Posters]",
-            "Invisible to non-adjacent units"
+            // This unique allows the Rebel Engineer to instantly build a "Rebel Camp" improvement.
+            // As per your request, the unit is NOT consumed when building the camp.
+            "Can instantly construct a [Rebel Camp] improvement",
+
+            // Rebel Engineers cannot be captured by enemy units.
+            "Uncapturable",
+
+            // Allows the unit to use the automation feature (though less critical for this unit).
+            "Automation is a primary action",
+
+            // Prevents this unit from being purchased with Gold or Faith, mirroring standard Settlers.
+            "Cannot be purchased",
+
+            // CRITICAL UNIQUE: This unit can ONLY be built or exist if the Rebel Civilization owns 0 actual cities.
+            // Once the first city is captured, this unit becomes unavailable, signifying the end of the "rebel phase".
+            "Only available <when number of [Cities] is equal to [0]>"
         ],
-        "promotions": ["Guerrilla Training"],
-        "attackSound": "nonmetal"
-    },
-    {
-        "name": "Militia",
-        "uniqueTo": "The Resistance",
-        "unitType": "Melee",
-        "movement": 2,
-        "strength": 8,
-        "cost": 40,
-        "requiredTech": "Archery",
-        "uniques": [
-            "Can move after attacking",
-            "Invisible to non-adjacent units",
-            "[+25]% Strength <when fighting in [Foreign Land]>"
-        ],
-        "promotions": ["Guerrilla Training"],
-        "attackSound": "nonmetal"
-    },
-    {
-        "name": "Scout",
-        "uniqueTo": "The Resistance",
-        "unitType": "Scout",
-        "movement": 2,
-        "strength": 5,
-        "cost": 25,
-        "obsoleteTech": "Scientific Theory",
-        "uniques": [
-            "Can see over obstacles",
-            "Invisible to non-adjacent units",
-            "[+1] Sight"
-        ],
-        "promotions": ["Guerrilla Training"],
-        "attackSound": "nonmetal"
+
+        // Attack sound, typically set to a non-combat sound for civilian units.
+        "attackSound": "nonmetalhit"
     }
 ]
