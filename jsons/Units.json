@@ -1,31 +1,21 @@
 [
+    // Your custom Rebel Engineer unit definition
     {
         "name": "Rebel Engineer",
         "replaces": "Settler", // This unit explicitly replaces the standard Settler unit.
+        "uniqueTo": "The Rebels", // Specifies this unit is unique to "The Rebels" civ.
         "unitType": "Civilian",
         "movement": 2,
-        "cost": 106, // The cost is set to be similar to a standard Settler.
+        "cost": 106,
 
         "uniques": [
-            // This unique allows the Rebel Engineer to instantly build a "Rebel Camp" improvement.
-            // As per your request, the unit is NOT consumed when building the camp.
             "Can instantly construct a [Rebel Camp] improvement",
-
-            // Rebel Engineers cannot be captured by enemy units.
             "Uncapturable",
-
-            // Allows the unit to use the automation feature (though less critical for this unit).
             "Automation is a primary action",
-
-            // Prevents this unit from being purchased with Gold or Faith, mirroring standard Settlers.
             "Cannot be purchased",
-
-            // CRITICAL UNIQUE: This unit can ONLY be built or exist if the Rebel Civilization owns 0 actual cities.
-            // Once the first city is captured, this unit becomes unavailable, signifying the end of the "rebel phase".
             "Only available <when number of [Cities] is equal to [0]>"
         ],
 
-        // Attack sound, typically set to a non-combat sound for civilian units.
         "attackSound": "nonmetalhit"
     }
 ]
