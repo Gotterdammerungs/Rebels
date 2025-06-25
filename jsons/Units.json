@@ -1,21 +1,35 @@
 [
-    // Your custom Rebel Engineer unit definition
     {
-        "name": "Rebel Engineer",
-        "replaces": "Settler", // This unit explicitly replaces the standard Settler unit.
-        "uniqueTo": "The Rebels", // Specifies this unit is unique to "The Rebels" civ.
-        "unitType": "Civilian",
-        "movement": 2,
-        "cost": 106,
+        "name": "The Rebels",
+        "leaderName": "The Insurgent",
+        "adjective": ["Rebel"],
+        "startBias": ["Avoid [Water]"],
+        "preferredVictoryType": "Domination",
 
+        "startIntroPart1": "You are the leader of the scattered Rebel forces, fighting against the established order. Your people cannot found traditional cities, but instead establish temporary camps.",
+        "startIntroPart2": "Will you overthrow your oppressors and establish a new order, or will your movement be crushed?",
+
+        "declaringWar": "Your tyranny ends now! Prepare for the true uprising!",
+        "attacked": "They dare to challenge the will of the people! They will regret this defiance!",
+        "defeated": "Perhaps our physical presence is crushed, but our spirit will live on to inspire future rebellions!",
+        "introduction": "We are the true liberators, fighting for freedom! Join us or be swept aside.",
+        "neutralHello": "Silence, tyrant! The only peace we seek is liberation.",
+        "hateHello": "The fight continues! You will fall!",
+        "tradeRequest": "We demand your surrender! There is no negotiation with oppressors.",
+
+        "outerColor": [70, 70, 70], // Dark grey
+        "innerColor": [200, 50, 50], // Rebel red
+        "favoredReligion": "None",
+
+        "uniqueName": "The Uprising",
         "uniques": [
-            "Can instantly construct a [Rebel Camp] improvement",
-            "Uncapturable",
-            "Automation is a primary action",
-            "Cannot be purchased",
-            "Only available <when number of [Cities] is equal to [0]>"
+            // FIXED: Changed "receive the" to "gain the" for proper unique recognition.
+            "All [All] units gain the [PROMOTION_REBEL_FREEDOM] promotion",
+            "Cannot build [Settler] units"
         ],
 
-        "attackSound": "nonmetalhit"
+        "spyNames": ["Che", "Castro", "Zapata", "Garibaldi", "Toussaint", "Mao", "Ho Chi Minh", "Mandela", "Bolívar", "San Martín", "Washington", "Stalin", "Lenin", "Luxemburg", "Guevara", "Fanon", "Malcom X", "Spartacus", "Boudica", "José Martí", "Pancho Villa", "Maximilien"],
+
+        "cities": ["."],
     }
 ]
