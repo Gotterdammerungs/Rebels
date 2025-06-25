@@ -5,6 +5,7 @@
         "adjective": ["Rebel"],
         "startBias": ["Avoid [Water]"],
         "preferredVictoryType": "Domination",
+        "type": "Civilization", // FIX: Added explicit "type" field.
 
         "startIntroPart1": "You are the leader of the scattered Rebel forces, fighting against the established order. Your people cannot found traditional cities, but instead establish temporary camps.",
         "startIntroPart2": "Will you overthrow your oppressors and establish a new order, or will your movement be crushed?",
@@ -19,15 +20,21 @@
 
         "outerColor": [70, 70, 70], // Dark grey
         "innerColor": [200, 50, 50], // Rebel red
+        "favoredReligion": "None",
+
         "uniqueName": "The Uprising",
         "uniques": [
-            "All newly-trained [All] units receive the [PROMOTION_REBEL_FREEDOM] promotion",
-            "Cannot build [Settler] units"
+            // FIX: Simplified the unique to grant the promotion to all units.
+            // The "All units" implicitly means "all of this civ's units".
+            "All units gain the [PROMOTION_REBEL_FREEDOM] promotion",
+
+            // FIX: Removed "Cannot build [Settler] units" as it's redundant and causing an error.
+            // The replacement by Rebel Engineer handles this.
         ],
 
-        // Updated the spyNames field to be on a single line.
         "spyNames": ["Che", "Castro", "Zapata", "Garibaldi", "Toussaint", "Mao", "Ho Chi Minh", "Mandela", "Bolívar", "San Martín", "Washington", "Stalin", "Lenin", "Luxemburg", "Guevara", "Fanon", "Malcom X", "Spartacus", "Boudica", "José Martí", "Pancho Villa", "Maximilien"],
 
-        "cities": ["."],
+        "cities": ["The Hideout"],
+        "willNotBeChosenForNewGames": true
     }
 ]
