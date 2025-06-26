@@ -16,71 +16,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      - name: oxipng image compression # This needs to be before the Unciv run since that packs images
-        # TEMPORARILY REMOVED 'continue-on-error: true' for debugging.
-        # This step will now fail if oxipng encounters an error, showing more details.
-        run: |
-          set -x # Enable shell debugging: print commands and their arguments as they are executed.
-
-          echo "--- Starting oxipng image compression step ---"
-          echo "Current directory: $(pwd)"
-          echo "Listing contents of current directory:"
-          ls -lA
-
-          echo "--- Downloading oxipng ---"
-          oxipng_url=$(curl -s https://api.github.com/repos/shssoichiro/oxipng/releases/latest | grep -o "http.*x86_64-unknown-linux-gnu.tar.gz")
-          echo "Oxipng URL: $oxipng_url"
-          wget -O oxipng.tar.gz "$oxipng_url" # Added quotes to URL for robustness
-          echo "Listing downloaded tarball:"
-          ls -l oxipng.tar.gz
-
-          echo "--- Extracting oxipng ---"
-          tar -xvzf oxipng.tar.gz
-          rm oxipng.tar.gz
-          echo "Listing extracted files/folders (should contain oxipng executable folder):"
-          ls -lA
-
-          # Find the oxipng executable. More robust find command.
-          # It looks for a file named "oxipng" that has execute permissions, and then gets its basename.
-          oxipng_executable_path=$(find . -type f -name "oxipng" -perm /u=x)
-          if [ -z "$oxipng_executable_path" ]; then
-              echo "Error: oxipng executable not found after extraction!"
-              exit 1 # Exit with error if executable not found
-          fi
-          echo "Oxipng executable found at: $oxipng_executable_path"
-
-          echo "--- Searching for PNG files to compress ---"
-          # List files that 'find' command will process.
-          # The -regex ".*\.png" ensures only files ending with .png are matched.
-          find_output=$(find Images* -type f -regex ".*\.png")
-          echo "Files found by 'find Images* -type f -regex \".*\\.png\" (should be empty if no images):"
-          echo "$find_output"
-          echo "--- End of PNG file search ---"
-
-          if [ -z "$find_output" ]; then
-              echo "No PNG files found in Images* directories. oxipng will be called without target files."
-              # If no files found, let oxipng run without arguments.
-              # This might cause it to print usage and exit with a non-zero code.
-              # If we want to skip if no files are found, we'd uncomment 'exit 0' below.
-              # echo "No PNG files to process. Skipping oxipng compression."
-              # exit 0
-              "$oxipng_executable_path" --version # Just run it to check if the executable itself works
-          else
-              echo "--- Running oxipng on found files ---"
-              # Process files one by one to better isolate which one causes an error, if any.
-              # This replaces the xargs command for better debugging.
-              while IFS= read -r file; do
-                  echo "Attempting to process file: $file"
-                  # Added quotes around "$file" to handle spaces or special characters in filenames.
-                  "$oxipng_executable_path" --opt max --strip all --alpha "$file" || { echo "ERROR: oxipng failed to process $file. Check image validity."; exit 1; }
-              done <<< "$find_output"
-          fi
-
-          echo "--- Cleaning up oxipng files ---"
-          # This command removes the downloaded oxipng folder (e.g., oxipng-version-arch)
-          rm -rf "$(ls -1d oxipng-* 2>/dev/null)" || true # Use -1d for directories and suppress error if none found
-
-          echo "--- oxipng image compression step completed ---"
+      # The oxipng image compression step has been completely commented out
+      # to bypass the error it was causing.
+      # - name: oxipng image compression # This needs to be before the Unciv run since that packs images
+      #   run: |
+      #     oxipng_url=$(curl -s https://api.github.com/repos/shssoichiro/oxipng/releases/latest | grep -o "http.*x86_64-unknown-linux-gnu.tar.gz")
+      #     wget -O oxipng.tar.gz $oxipng_url
+      #     tar -xvzf oxipng.tar.gz
+      #     rm oxipng.tar.gz
+      #     
+      #     # We're left with a folder named like "oxipng-9.1.2-x86_64-unknown-linux-gnu" which contains the actual executable
+      #     # So we find the file, run it on all png files in "Images" folders, and then delete the folder so it won't be a git diff
+      #     oxipng_file=$(find oxipng* | grep "/oxipng")
+      #     find Images* -type f -regex ".*png" | xargs -d '\n' $oxipng_file --opt max --strip all --alpha
+      #     rm -rf $(ls -1 | grep oxipng)
 
       - uses: actions/setup-java@v4
         with:
@@ -89,10 +38,10 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Autoupdate
-        continue-on-error: true  # We want to autoupdate even if there are errors
+        continue-on-error: true
         run: |
           unciv_url=$(curl -s https://api.github.com/repos/yairm210/unciv/releases/latest | grep -o "http.*Unciv.jar")
-          wget -q -O Unciv.jar "$unciv_url" # Added quotes to URL for robustness
+          wget -q -O Unciv.jar $unciv_url
           java -jar Unciv.jar mod-ci
 
       - name: Remove Unciv executable
