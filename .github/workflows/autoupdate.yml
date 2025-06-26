@@ -16,17 +16,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      # The oxipng image compression step has been completely commented out
-      # to bypass the error it was causing.
-      # - name: oxipng image compression # This needs to be before the Unciv run since that packs images
+      # The oxipng image compression step has been completely commented out.
+      # This will ensure the workflow bypasses this problematic step entirely
+      # and proceeds with the rest of your mod update process.
+      # - name: oxipng image compression
       #   run: |
       #     oxipng_url=$(curl -s https://api.github.com/repos/shssoichiro/oxipng/releases/latest | grep -o "http.*x86_64-unknown-linux-gnu.tar.gz")
       #     wget -O oxipng.tar.gz $oxipng_url
       #     tar -xvzf oxipng.tar.gz
       #     rm oxipng.tar.gz
       #     
-      #     # We're left with a folder named like "oxipng-9.1.2-x86_64-unknown-linux-gnu" which contains the actual executable
-      #     # So we find the file, run it on all png files in "Images" folders, and then delete the folder so it won't be a git diff
       #     oxipng_file=$(find oxipng* | grep "/oxipng")
       #     find Images* -type f -regex ".*png" | xargs -d '\n' $oxipng_file --opt max --strip all --alpha
       #     rm -rf $(ls -1 | grep oxipng)
@@ -51,3 +50,4 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
           commit-message: Autoupdate
+          
