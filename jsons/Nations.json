@@ -20,7 +20,6 @@
 
         "outerColor": [70, 70, 70], // Dark grey
         "innerColor": [200, 50, 50], // Rebel red
-        "favoredReligion": "None",
 
         "uniqueName": "The Uprising",
         "uniques": [
